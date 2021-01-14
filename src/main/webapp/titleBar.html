@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CRUD Functionality using GAE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#grad1 {
+	height: 100px;
+	background-color: red; /* For browsers that do not support gradients */
+	background-image: linear-gradient(#a6b0ab, #3770a8);
+}
+
+button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	color: white;
+}
+
+#home {
+	position: absolute;
+	transition: .5s ease;
+	top: 17%;
+	left: 1.5%;
+}
+
+#contact {
+	position: absolute;
+	transition: .5s ease;
+	top: 17%;
+	left: 7.5%;
+}
+
+#about {
+	position: absolute;
+	transition: .5s ease;
+	top: 17%;
+	left: 15.5%;
+}
+
+#p {
+	position: absolute;
+	transition: .5s ease;
+	color: white;
+	top: 17%;
+	left: 79%;
+}
+</style>
+</head>
+<body>
+	<div id="grad1">
+		<div id="options">
+			<div id="home">
+				<button class="openbtn" onclick="location.href = 'add.jsp';">Home</button>
+			</div>
+			<div id="contact">
+				<button class="openbtn" onclick="location.href = 'contact.jsp';">Contact</button>
+			</div>
+			<div id="about">
+				<button class="openbtn" onclick="location.href = 'about.jsp';">About</button>
+			</div>
+			<div id="p">
+				<button type="button" disabled>shivangi.majumder@infiflex.com</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
